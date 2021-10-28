@@ -6,14 +6,32 @@ export default {
   component: AdminPanelFilled,
   argTypes: {
     username: {
+      description: 'Sets The Initial Value of Username in The Header',
+    },
+    setUsername: {
       description: 'Sets The Username Of The Header',
     },
-    table: {
-      type: {
-        summary: 'Click For Summary',
-        detail:
-          'The component is set to take the state of the user and password then it use them to connect to api using axios after the confirmation of password in database it then uses the joinroom prop method which allow you to join room/connect  ',
-      },
+    setClientResponder: {
+      description: 'Sets The responder msg',
+    },
+    chatListMapping: {
+      description: 'Sets The Username Of The Header',
+    },
+    clientMessageArray: {
+      description: 'Array to hold Clients msgs',
+    },
+    adminMessageArray: {
+      description: 'Array to hold Admin msgs',
+    },
+    sendMessage: {
+      description:
+        'Function to handle sending messaging of signalr or similar softwares',
+    },
+    avatarIco: {
+      description: 'Sets The image src of the image ',
+    },
+    clientMsgs: {
+      description: 'To hold the client message state',
     },
   },
 };

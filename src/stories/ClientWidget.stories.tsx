@@ -27,16 +27,16 @@ export default {
       description: 'FlippedImageAlt alt ',
     },
     normalImageStyle: {
-      description: 'FlippedImageAlt alt ',
+      description: 'NormalImage style ',
     },
     flippedImageStyle: {
-      description: 'FlippedImageAlt alt ',
+      description: 'FlippedImageAlt style ',
     },
     title: {
-      description: 'FlippedImageAlt alt ',
+      description: 'Title of the widget ',
     },
     subtitle: {
-      description: 'FlippedImageAlt alt ',
+      description: 'Subtitle of the widget ',
     },
   },
 };
