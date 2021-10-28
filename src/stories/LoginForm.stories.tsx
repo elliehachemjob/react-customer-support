@@ -1,30 +1,45 @@
-import React from "react";
-import { LoginForm } from "../components/Forms";
+import React from 'react';
+import { LoginForm } from '../components/Forms';
 
 export default {
-  title: "Forms/LoginForm",
+  title: 'Forms/LoginForm',
   component: LoginForm,
   argTypes: {
-    onClick: {
-      description: "To Login Check Summary ",
-      table: {
-        type: {
-          summary: "Click For Summary",
-          detail:
-            "The component is set to take the state of the user and password then it use them to connect to api using axios after the confirmation of password in database it then uses the joinroom prop method which allow you to join room/connect  ",
-        },
-      },
-    },
     joinRoom: {
       description:
-        "just a function that allows you to connect to room/server etc you should be making one  ",
-      table: {
-        type: {
-          summary: "Click For Summary",
-          detail:
-            "The component is set to take the state of the user and password then it use them to connect to api using axios after the confirmation  in database it then uses the joinroom prop method which allow you to join room/connect  ",
-        },
-      },
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    user: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    setUser: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    password: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    setPassword: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    loginHandler: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    title: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldOneType: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    containerStyle: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
     },
   },
 };
