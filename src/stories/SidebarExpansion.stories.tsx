@@ -23,6 +23,22 @@ export default {
     expanstionPanelData4: {
       description: 'Sets The  Data of the first div in the SidebarExpansion 4',
     },
+    onClickExpanstionPanelData1: {
+      description:
+        'Sets The  EventHnalder of the first div in the SidebarExpansion 1',
+    },
+    onClickExpanstionPanelData2: {
+      description:
+        'Sets The  EventHnalder of the first div in the SidebarExpansion 2',
+    },
+    onClickExpanstionPanelData3: {
+      description:
+        'Sets The  EventHnalder of the first div in the SidebarExpansion 3',
+    },
+    onClickExpanstionPanelData4: {
+      description:
+        'Sets The  EventHnalder of the first div in the SidebarExpansion 4',
+    },
   },
 };
 

@@ -9,8 +9,8 @@ interface Props {
   setIsWidget: (active: boolean) => void;
   sendMessage?: (user: string, isAdmin: string) => Promise<void>;
   normalimage?: string;
-  flippedimage?: string;
-  normalimageAlt?: string;
+  flippedImage?: string;
+  normalImageAlt?: string;
   flippedimageAlt?: string;
   normalImageStyle?: {};
   flippedImageStyle?: {};

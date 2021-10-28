@@ -1,38 +1,42 @@
-import React from "react";
-import { ClientWidget } from "../components/ClientWidget";
+import React from 'react';
+import { ClientWidget } from '../components/ClientWidget';
 
 export default {
-  title: "Widgets/ClientWidget",
+  title: 'Widgets/ClientWidget',
   component: ClientWidget,
   argTypes: {
     isWidget: {
-      description: "Changes Widget Animation",
-      table: {
-        type: {
-          summary: "Click For Summary",
-          detail: "Changes Widget Animation When Someone Togggles it",
-        },
-      },
+      description: 'Changes Widget Animation',
     },
     setIsWidget: {
-      description: "State To Set the Widget Value",
-      table: {
-        type: {
-          summary: "Click For Summary",
-          detail: "There is Either False Or True",
-        },
-      },
+      description: 'State To Set the Widget Value',
     },
-
     sendMessage: {
-      description: "You need to set in Singalr",
-      table: {
-        type: {
-          summary: "To send a message to user ",
-          detail:
-            "props provided are user3: string,isAdmin: string ,message: string, but again you can change it anytime",
-        },
-      },
+      description: 'You need to set in Singalr/other similar software',
+    },
+    normalimage: {
+      description: 'The image before you use setIsWidget(false) ',
+    },
+    flippedimage: {
+      description: 'The image after you use setIsWidget(true) ',
+    },
+    normalimageAlt: {
+      description: 'NormalImage alt ',
+    },
+    flippedimageAlt: {
+      description: 'FlippedImageAlt alt ',
+    },
+    normalImageStyle: {
+      description: 'FlippedImageAlt alt ',
+    },
+    flippedImageStyle: {
+      description: 'FlippedImageAlt alt ',
+    },
+    title: {
+      description: 'FlippedImageAlt alt ',
+    },
+    subtitle: {
+      description: 'FlippedImageAlt alt ',
     },
   },
 };

@@ -20,7 +20,7 @@ import {
 } from '@chatscope/chat-ui-kit-react';
 
 interface Props {
-  onClick: () => any;
+  onClick: () => void;
 }
 
 export const VideoCall: React.FC<Props> = (props: any): any => {
