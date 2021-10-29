@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import { Widget } from 'react-chat-widget';
+// @ts-ignore
 import flippedimage from './normalImage.png';
+// @ts-ignore
 import normalimage from './flippedImage.png';
 
 interface Props {

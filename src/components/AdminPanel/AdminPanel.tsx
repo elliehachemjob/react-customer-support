@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
-import './App.css';
-import './styles.css';
 import {
-  MainContainer,
-  ChatContainer,
-  MessageList,
-  Message,
-  MessageInput,
   Avatar,
+  ChatContainer,
   Conversation,
   ConversationHeader,
-  VoiceCallButton,
-  VideoCallButton,
-  InfoButton,
   ConversationList,
+  MainContainer,
+  MessageInput,
+  MessageList,
   Sidebar,
-  Search,
-  ExpansionPanel,
+  // @ts-ignore
 } from '@chatscope/chat-ui-kit-react';
+import React from 'react';
+import './App.css';
+import './styles.css';
 
 interface Props {
   username: string;

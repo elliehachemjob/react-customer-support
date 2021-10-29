@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import './styles.css';
+
 import {
   MainContainer,
   ChatContainer,
@@ -17,6 +18,7 @@ import {
   Sidebar,
   Search,
   ExpansionPanel,
+  // @ts-ignore
 } from '@chatscope/chat-ui-kit-react';
 
 interface message {
@@ -40,10 +42,6 @@ interface Props {
 }
 
 export const AdminPanelFilled: React.FC<Props> = (props: any): any => {
-  interface message {
-    message: string;
-  }
-
   const clientMsgs = [
     { message: 'hey' },
     { message: 'client' },
@@ -210,7 +208,7 @@ export const AdminPanelFilled: React.FC<Props> = (props: any): any => {
                 position: 'single',
               }}
             >
-              <Avatar src={avatarIco} name={props.username} />
+              <Avatar src={props.avatarIco} name={props.username} />
             </Message>
           </div>
         ))}
