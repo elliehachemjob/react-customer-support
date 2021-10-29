@@ -46,5 +46,3 @@ export const Default = AdminWidgetTemplate.bind({});
 // Default.args = {
 //   username: '',
 // };
-
-//testing chromatic
