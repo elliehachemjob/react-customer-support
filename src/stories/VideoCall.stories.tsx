@@ -10,4 +10,4 @@ const VideoCallTemplate = (args: any) => <VideoCall {...args} />;
 
 export const Default = VideoCallTemplate.bind({});
 
-Default.args = {};
+// Default.args = {};

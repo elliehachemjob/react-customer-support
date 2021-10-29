@@ -106,4 +106,4 @@ const SignUpFormTemplate = (args: any) => <SignUpForm {...args} />;
 
 export const Default = SignUpFormTemplate.bind({});
 
-Default.args = {};
+// Default.args = {};

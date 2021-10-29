@@ -21,4 +21,4 @@ const SidebarAdminPanelTemplate = (args: any) => (
 
 export const Default = SidebarAdminPanelTemplate.bind({});
 
-Default.args = {};
+// Default.args = {};

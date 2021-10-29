@@ -64,6 +64,7 @@
     "@types/storybook__react": "^5.2.1",
     "axios": "^0.23.0",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.0.5",
     "husky": "^7.0.4",
     "prop-types": "^15.7.2",
     "rbx": "2.2.0",

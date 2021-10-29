@@ -10,4 +10,4 @@ const VoiceCallTemplate = (args: any) => <VoiceCall {...args} />;
 
 export const Default = VoiceCallTemplate.bind({});
 
-Default.args = {};
+// Default.args = {};

@@ -48,4 +48,4 @@ const SidebarExpansionWidgetTemplate = (args: any) => (
 
 export const Default = SidebarExpansionWidgetTemplate.bind({});
 
-Default.args = {};
+// Default.args = {};

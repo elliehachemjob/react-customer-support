@@ -48,4 +48,4 @@ const ExpansionAdminPanelWidgetTemplate = (args: any) => (
 
 export const Default = ExpansionAdminPanelWidgetTemplate.bind({});
 
-Default.args = {};
+// Default.args = {};

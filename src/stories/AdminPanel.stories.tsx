@@ -43,6 +43,6 @@ const AdminWidgetTemplate = (args: any) => <AdminPanel {...args} />;
 
 export const Default = AdminWidgetTemplate.bind({});
 
-Default.args = {
-  username: '',
-};
+// Default.args = {
+//   username: '',
+// };

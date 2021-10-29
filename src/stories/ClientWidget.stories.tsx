@@ -45,6 +45,6 @@ const ClientWidgetTemplate = (args: any) => <ClientWidget {...args} />;
 
 export const Default = ClientWidgetTemplate.bind({});
 
-Default.args = {
-  isWidget: false,
-};
+// Default.args = {
+//   isWidget: false,
+// };
