@@ -7,135 +7,83 @@ export default {
   argTypes: {
     joinRoom: {
       description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+        'Function that allows you to connect to room/server Sinalr or similar software   ',
     },
     user: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Variable to hold the User value(Use useState etc)   ',
     },
     setUser: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Variable to set the User value(Use useState etc)   ',
     },
     password: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Variable to hold the Password value(Use useState etc)  ',
     },
     setPassword: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Variable to set the Password value(Use useState etc)  ',
     },
     loginHandler: {
       description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+        'Function onPress of Login you can defined your custom code in it   ',
     },
     title: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the title of the container  ',
     },
     fieldOneType: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the type of field one Default is  email ',
     },
     containerStyle: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'To change the container style ',
     },
     fieldOnePlaceholder: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the Placeholder of field one Default is  email ',
     },
     fieldOneIcon: {
       description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+        'Sets the Icon of field one Default is Font Awesome faEnvelope  ',
     },
     fieldTwoIcon: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the Icon of field Two Default is Font Awesome faLock',
     },
     textAlign: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Defines text TextAlign default is centered  ',
     },
     loginHandlertitle: {
       description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    signUpHandlertitle: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+        'Defines the title/word contained inside the Login Handler button ',
     },
     rememberMe: {
       description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+        'Defines the title/word contained inside the Container when the user forgets his password   ',
     },
     checkIcon: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Icon to check if password is correct',
     },
     titleColor: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    fieldOneLeft: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    fieldOneRight: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Color of the title Default is white ',
     },
     fieldTwoIconLeft: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the icon "Position" of field two ',
     },
     titleBackground: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'The Background color of the title usually it is primary',
     },
     fieldTwoType: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'The type of field one Default is Password ',
     },
     fieldTwoPlaceholder: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the Placeholder of field one Default is  Password  ',
     },
     checkIconSize: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the icon size Default is small ',
     },
     checkIconAlign: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the icon size Default is right ',
     },
     faEnvelopeSize: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the size of the "Email Icon" size  ',
     },
     faEnvelopeAlign: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    sendEmailVerification: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    setSendEmailVerification: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    fieldThreeType: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    fieldThreePlaceholder: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
-    },
-    signUpHandler: {
-      description:
-        'just a function that allows you to connect to room/server etc you should be making one  ',
+      description: 'Sets the position of the "Email Icon" size  ',
     },
   },
 };

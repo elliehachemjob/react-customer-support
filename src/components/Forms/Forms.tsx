@@ -22,7 +22,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 
-interface Props {
+interface LoginProps {
   joinRoom: (user: string) => Promise<void>;
   user: string;
   setUser: (active: string) => void;
@@ -37,12 +37,9 @@ interface Props {
   fieldTwoIcon?: any;
   textAlign?: string;
   loginHandlertitle?: string;
-  signUpHandlertitle?: string;
   rememberMe?: string;
   checkIcon?: any;
   titleColor?: string;
-  fieldOneLeft?: boolean;
-  fieldOneRight?: boolean;
   fieldTwoIconLeft?: boolean;
   titleBackground?: string;
   fieldTwoType?: string;
@@ -51,14 +48,9 @@ interface Props {
   checkIconAlign?: string;
   faEnvelopeSize?: string;
   faEnvelopeAlign?: string;
-  sendEmailVerification?: string;
-  setSendEmailVerification?: (active: string) => void;
-  fieldThreeType?: string;
-  fieldThreePlaceholder?: string;
-  signUpHandler?: () => void;
 }
 
-export const LoginForm: React.FC<Props> = (props: any): any => {
+export const LoginForm: React.FC<LoginProps> = (props: any): any => {
   return (
     <Level>
       <Level.Item textAlign={props.textAlign ? props.textAlign : 'centered'}>
@@ -187,7 +179,38 @@ export const LoginForm: React.FC<Props> = (props: any): any => {
   );
 };
 
-export const SignUpForm: React.FC<Props> = (props: any): any => {
+interface SignUpProps {
+  joinRoom: (user: string) => Promise<void>;
+  user: string;
+  setUser: (active: string) => void;
+  password: string;
+  setPassword: (active: string) => void;
+  title?: string;
+  fieldOneType?: string;
+  fieldOnePlaceholder?: string;
+  containerStyle?: {};
+  fieldOneIcon?: any;
+  fieldTwoIcon?: any;
+  textAlign?: string;
+  signUpHandlertitle?: string;
+  checkIcon?: any;
+  titleColor?: string;
+  fieldTwoIconLeft?: boolean;
+  titleBackground?: string;
+  fieldTwoType?: string;
+  fieldTwoPlaceholder?: string;
+  checkIconSize?: string;
+  checkIconAlign?: string;
+  faEnvelopeSize?: string;
+  faEnvelopeAlign?: string;
+  sendEmailVerification?: string;
+  setSendEmailVerification?: (active: string) => void;
+  fieldThreeType?: string;
+  fieldThreePlaceholder?: string;
+  signUpHandler?: () => void;
+  fieldThreeIcon?: any;
+}
+export const SignUpForm: React.FC<SignUpProps> = (props: any): any => {
   return (
     <Level>
       <Level.Item textAlign={props.textAlign ? props.textAlign : 'centered'}>
@@ -302,17 +325,14 @@ export const SignUpForm: React.FC<Props> = (props: any): any => {
                     value={props.sendEmailVerification}
                   />
                   <Icon size="small" align="left">
-                    <FontAwesomeIcon icon={faArrowRight} />
+                    <FontAwesomeIcon
+                      icon={
+                        props.fieldThreeIcon
+                          ? props.fieldThreeIcon
+                          : faArrowRight
+                      }
+                    />
                   </Icon>
-                </Control>
-              </Field>
-              <Field>
-                <Control>
-                  <Label>
-                    <Checkbox />
-                    {props.rememberMe ? props.rememberMe : 'Remember me'}
-                  </Label>
-                  <Label></Label>
                 </Control>
               </Field>
               <Field>
