@@ -1661,6 +1661,14 @@
     "magic-string" "^0.25.2"
     "resolve" "^1.11.0"
 
+"@rollup/plugin-image@^2.1.1":
+  "integrity" "sha512-AgP4U85zuQJdUopLUCM+hTf45RepgXeTb8EJsleExVy99dIoYpt3ZlDYJdKmAc2KLkNntCDg6BPJvgJU3uGF+g=="
+  "resolved" "https://registry.npmjs.org/@rollup/plugin-image/-/plugin-image-2.1.1.tgz"
+  "version" "2.1.1"
+  dependencies:
+    "@rollup/pluginutils" "^3.1.0"
+    "mini-svg-data-uri" "^1.2.3"
+
 "@rollup/plugin-json@^4.0.0":
   "integrity" "sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw=="
   "resolved" "https://registry.npmjs.org/@rollup/plugin-json/-/plugin-json-4.1.0.tgz"
@@ -9711,6 +9719,11 @@
   dependencies:
     "@babel/runtime" "^7.12.1"
     "tiny-warning" "^1.0.3"
+
+"mini-svg-data-uri@^1.2.3":
+  "integrity" "sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA=="
+  "resolved" "https://registry.npmjs.org/mini-svg-data-uri/-/mini-svg-data-uri-1.4.3.tgz"
+  "version" "1.4.3"
 
 "minimalistic-assert@^1.0.0", "minimalistic-assert@^1.0.1":
   "integrity" "sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A=="

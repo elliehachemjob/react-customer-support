@@ -51,6 +51,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-replace": "^3.0.0",
     "@size-limit/preset-small-lib": "^6.0.3",
     "@storybook/addon-essentials": "^6.3.12",

@@ -1,23 +1,10 @@
-import React, { useState } from 'react';
+import {
+  Sidebar,
+  // @ts-ignore
+} from '@chatscope/chat-ui-kit-react';
+import React from 'react';
 import './App.css';
 import './styles.css';
-import {
-  MainContainer,
-  ChatContainer,
-  MessageList,
-  Message,
-  MessageInput,
-  Avatar,
-  Conversation,
-  ConversationHeader,
-  VoiceCallButton,
-  VideoCallButton,
-  InfoButton,
-  ConversationList,
-  Sidebar,
-  Search,
-  ExpansionPanel,
-} from '@chatscope/chat-ui-kit-react';
 
 interface Props {
   position?: string;
