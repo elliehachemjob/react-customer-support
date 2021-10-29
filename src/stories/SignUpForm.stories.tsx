@@ -5,26 +5,137 @@ export default {
   title: 'Forms/SignUpForm',
   component: SignUpForm,
   argTypes: {
-    onClick: {
-      description: 'To SignUp Check Summary ',
-      table: {
-        type: {
-          summary: 'Click For Summary',
-          detail:
-            'The component is set to take the state of the user,password and sendemailverification then it use them to connect to api using axios after  the user is not found in the  database and confirmation  it then uses the joinroom prop method which allow you to join room/connect  ',
-        },
-      },
-    },
     joinRoom: {
       description:
         'just a function that allows you to connect to room/server etc you should be making one  ',
-      table: {
-        type: {
-          summary: 'Click For Summary',
-          detail:
-            'The component is set to take the state of the user and password then it use them to connect to api using axios after the confirmation and the user is not found in the  database it then uses the joinroom prop method which allow you to join room/connect  ',
-        },
-      },
+    },
+    user: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    setUser: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    password: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    setPassword: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    loginHandler: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    title: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldOneType: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    containerStyle: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldOnePlaceholder: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldOneIcon: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldTwoIcon: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    textAlign: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    loginHandlertitle: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    signUpHandlertitle: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    rememberMe: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    checkIcon: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    titleColor: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldOneLeft: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldOneRight: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldTwoIconLeft: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    titleBackground: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldTwoType: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldTwoPlaceholder: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    checkIconSize: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    checkIconAlign: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    faEnvelopeSize: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    faEnvelopeAlign: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    sendEmailVerification: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    setSendEmailVerification: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldThreeType: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    fieldThreePlaceholder: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
+    },
+    signUpHandler: {
+      description:
+        'just a function that allows you to connect to room/server etc you should be making one  ',
     },
   },
 };
