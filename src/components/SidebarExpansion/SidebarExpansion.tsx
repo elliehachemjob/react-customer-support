@@ -34,7 +34,7 @@ interface Props {
 
 export const SidebarExpansion: React.FC<Props> = (props: any): any => {
   return (
-    <Sidebar position={!props.title ? 'right' : props.title}>
+    <Sidebar position={!props.position ? 'right' : props.position}>
       <ExpansionPanel open title={!props.title ? 'Info' : props.title}>
         <p
           onClick={() => {

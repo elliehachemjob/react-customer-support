@@ -20,7 +20,6 @@ import {
 } from '@chatscope/chat-ui-kit-react';
 
 interface Props {
-  title?: string;
   position?: string;
   data?: string;
 }
