@@ -14,10 +14,6 @@ React Customer Support is a special library that lets you have an admin panel an
 3. Customize the component using the optional props and that is it.
 4. You might need to read the [Storybook Documenation](https://617bad5931c922004a46fe6f-luoywuskvd.chromatic.com/?path=/story/panels-adminpanel--default "storybook documenation") for more information the types of each component as well brief description of each props is listed there 
 
-## User Stories
-- A user can tweet their thoughts
-- A user can like other users tweets
-
 ## Features
 - Admin Panel
   - The main component as admin can use it to interact with clients(clients using Client Widget)
