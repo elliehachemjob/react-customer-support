@@ -12,7 +12,7 @@ React Customer Support is a special library that lets you have an admin panel an
 1. Simply add the component you want to use.
 2. Supply the mandatory props to the component.
 3. Customize the component using the optional props and that is it.
-4. You might need to read the [storybook documenation](https://617bad5931c922004a46fe6f-luoywuskvd.chromatic.com/?path=/story/panels-adminpanel--default "storybook documenation") for more information the types of each component as well brief description of each props is listed there 
+4. You might need to read the [Storybook Documenation](https://617bad5931c922004a46fe6f-luoywuskvd.chromatic.com/?path=/story/panels-adminpanel--default "storybook documenation") for more information the types of each component as well brief description of each props is listed there 
 
 ## User Stories
 - A user can tweet their thoughts
@@ -61,8 +61,8 @@ React Customer Support is a special library that lets you have an admin panel an
 
 ## What the app looks like
 
-![alt text](https://github.com/MikaelAbehsera/Youtube-tweeter-documentation-example/blob/master/screenshots/wefwefwefewfwefwef.JPG)
-![alt text](https://github.com/MikaelAbehsera/Youtube-tweeter-documentation-example/blob/master/screenshots/wefwefwefewfwefwef.JPG)
-![alt text](https://github.com/MikaelAbehsera/Youtube-tweeter-documentation-example/blob/master/screenshots/wefwefwefewfwefwef.JPG)
-![alt text](https://github.com/MikaelAbehsera/Youtube-tweeter-documentation-example/blob/master/screenshots/wefwefwefewfwefwef.JPG)
+![Admin Panel](https://github.com/elliehachemjob/react-customer-support/blob/master/screenshots/Admin.PNG)
+![Client Widget](https://github.com/elliehachemjob/react-customer-support/blob/master/screenshots/Client.PNG)
+![Login Form ](https://github.com/elliehachemjob/react-customer-support/blob/master/screenshots/Login.PNG)
+![SignUp Form](https://github.com/elliehachemjob/react-customer-support/blob/master/screenshots/SignUp.PNG)
 
