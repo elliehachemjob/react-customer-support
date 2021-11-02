@@ -11,6 +11,7 @@ import {
   Card,
   Carousel,
   CloseButton,
+  Dropdown,
 } from 'react-bootstrap';
 
 interface ButtonComponentProps {
@@ -544,6 +545,91 @@ export const CloseButtonComponent: React.FC<Props> = (props: any): any => {
             : props.onClick
         }
       />
+    </div>
+  );
+};
+
+interface DropDownComponentProps {
+  onClick1?: () => void;
+  onClick2?: () => void;
+  onClick3?: () => void;
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+  dropDownText?: string;
+  dropDownItemText1: string;
+  dropDownItemText2: string;
+  dropDownItemText3: string;
+  id: string;
+}
+
+export const DropDownComponent: React.FC<DropDownComponentProps> = (
+  props: any
+): any => {
+  return (
+    <div>
+      <Dropdown>
+        <Dropdown.Toggle
+          variant={!props.variant ? 'primary' : props.variant}
+          id={!props.variant ? 'dropdown' : props.variant}
+        >
+          {!props.dropDownText ? 'Dropdown Text' : props.dropDownText}
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item
+            onClick={
+              !props.onClick1
+                ? () => {
+                    alert('put your function here');
+                  }
+                : props.onClick1
+            }
+          >
+            {!props.dropDownItemText1
+              ? 'Dropdown Item  Text 1 '
+              : props.dropDownItemText1}
+          </Dropdown.Item>
+          <Dropdown.Item
+            onClick={
+              !props.onClick2
+                ? () => {
+                    alert('put your function here');
+                  }
+                : props.onClick2
+            }
+          >
+            {!props.dropDownItemText2
+              ? 'Dropdown Item  Text 2 '
+              : props.dropDownItemText2}
+          </Dropdown.Item>
+          <Dropdown.Item
+            onClick={
+              !props.onClick3
+                ? () => {
+                    alert('put your function here');
+                  }
+                : props.onClick3
+            }
+          >
+            {!props.dropDownItemText3
+              ? 'Dropdown Item  Text 3 '
+              : props.dropDownItemText3}
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     </div>
   );
 };
