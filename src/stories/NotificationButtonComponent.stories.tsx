@@ -2,7 +2,7 @@ import React from 'react';
 import { NotificationButtonComponent } from '../components/CommonComponents';
 
 export default {
-  title: 'BootStrap/NotificationButtonComponent',
+  title: 'Z-BootStrap/NotificationButtonComponent',
   component: NotificationButtonComponent,
 };
 

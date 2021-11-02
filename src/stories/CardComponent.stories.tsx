@@ -2,7 +2,7 @@ import React from 'react';
 import { CardComponent } from '../components/CommonComponents';
 
 export default {
-  title: 'BootStrap/CardComponent',
+  title: 'Z-BootStrap/CardComponent',
   component: CardComponent,
 };
 

@@ -9,6 +9,7 @@ import {
   Badge,
   ButtonGroup,
   Card,
+  Carousel,
 } from 'react-bootstrap';
 
 interface ButtonComponentProps {
@@ -411,5 +412,111 @@ export const CardComponent: React.FC<Props> = (props: any): any => {
         </Button>
       </Card.Body>
     </Card>
+  );
+};
+
+interface CarouselComponentProps {
+  cardImage1: string;
+  cardImage2: string;
+  cardImage3: string;
+  altImage1: string;
+  altImage2: string;
+  altImage3: string;
+  className1: string;
+  className2: string;
+  className3: string;
+  SlideLable1: string;
+  SlideLable2: string;
+  SlideLable3: string;
+  SlideLableDescription1: string;
+  SlideLableDescription2: string;
+  SlideLableDescription3: string;
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+}
+
+export const CarouselComponent: React.FC<CarouselComponentProps> = (
+  props: any
+): any => {
+  return (
+    <Carousel>
+      <Carousel.Item>
+        <img
+          className={!props.className1 ? 'd-block w-100' : props.className1}
+          src={
+            !props.cardImage1
+              ? 'https://media-exp1.licdn.com/dms/image/C560BAQHgMOc88iPV6g/company-logo_200_200/0/1578911344580?e=2159024400&v=beta&t=WfQV2bAVy28VrvjaVFELLmOHYSgYjXtMte1e0cEGpJc'
+              : props.cardImage1
+          }
+          alt={!props.altImage1 ? 'alt image 1' : props.altImage1}
+        />
+        <Carousel.Caption>
+          <h3>
+            {!props.SlideLable1 ? 'First slide label' : props.SlideLable1}
+          </h3>
+          <p>
+            {' '}
+            {!props.SlideLableDescription1
+              ? 'First Slide Description'
+              : props.SlideLableDescription1}
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className={!props.className2 ? 'd-block w-100' : props.className2}
+          src={
+            !props.cardImage2
+              ? 'https://media-exp1.licdn.com/dms/image/C560BAQHgMOc88iPV6g/company-logo_200_200/0/1578911344580?e=2159024400&v=beta&t=WfQV2bAVy28VrvjaVFELLmOHYSgYjXtMte1e0cEGpJc'
+              : props.cardImage2
+          }
+          alt={!props.altImage1 ? 'alt image 2' : props.altImage1}
+        />
+        <Carousel.Caption>
+          <h3>
+            {!props.SlideLable2 ? 'Second slide label' : props.SlideLable2}
+          </h3>
+          <p>
+            {!props.SlideLableDescription3
+              ? 'Second Slide Description'
+              : props.SlideLableDescription3}
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className={!props.className3 ? 'd-block w-100' : props.className3}
+          src={
+            !props.cardImage3
+              ? 'https://media-exp1.licdn.com/dms/image/C560BAQHgMOc88iPV6g/company-logo_200_200/0/1578911344580?e=2159024400&v=beta&t=WfQV2bAVy28VrvjaVFELLmOHYSgYjXtMte1e0cEGpJc'
+              : props.cardImage3
+          }
+          alt={!props.altImage3 ? 'alt image 1' : props.altImage3}
+        />
+        <Carousel.Caption>
+          <h3>
+            {!props.SlideLable3 ? 'Third slide label' : props.SlideLable3}
+          </h3>
+          <p>
+            {!props.SlideLableDescription3
+              ? 'Third Slide Description'
+              : props.SlideLableDescription3}
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 };

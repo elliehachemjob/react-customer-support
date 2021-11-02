@@ -2,7 +2,7 @@ import React from 'react';
 import { ButtonGroupComponent } from '../components/CommonComponents';
 
 export default {
-  title: 'BootStrap/ButtonGroupComponent',
+  title: 'Z-BootStrap/ButtonGroupComponent',
   component: ButtonGroupComponent,
 };
 
