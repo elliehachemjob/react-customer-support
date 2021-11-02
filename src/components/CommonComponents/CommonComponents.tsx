@@ -1,11 +1,8 @@
 // @ts-ignore
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
-import Accordion from 'react-bootstrap/Accordion';
-import Badge from 'react-bootstrap/Badge';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { Button, Alert, Accordion, Badge, ButtonGroup } from 'react-bootstrap';
 
 interface ButtonComponentProps {
   onClick?: () => void;
@@ -220,5 +217,126 @@ export const NotificationButtonComponent: React.FC<NotificationButtonComponentPr
         {!props.badgeTextValue ? 'value here' : props.badgeTextValue}
       </Badge>
     </Button>
+  );
+};
+
+interface ButtonGroupComponent {
+  onClickbutton1?: () => void;
+  onClickbutton2?: () => void;
+  onClicbutton3?: () => void;
+  buttonText1?: string;
+  buttonText2?: string;
+  buttonText3?: string;
+  buttonVariant1?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+  buttonVariant2?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+  buttonVariant3?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+  buttonSize1?: 'lg' | 'sm';
+  buttonSize2?: 'lg' | 'sm';
+  buttonSize3?: 'lg' | 'sm';
+  buttonDisabled1?: boolean;
+  buttonDisabled2?: boolean;
+  buttonDisabled3?: boolean;
+  buttongActive1?: boolean;
+  buttongActive2?: boolean;
+  buttongActive3?: boolean;
+}
+
+export const ButtonGroupComponent: React.FC<Props> = (props: any): any => {
+  return (
+    <ButtonGroup>
+      <Button
+        className="text-right"
+        onClick={
+          !props.onClickbutton1
+            ? () => {
+                alert('use the onClick prop to add your own function here');
+              }
+            : props.onClickbutton1
+        }
+        variant={!props.buttonVariant1 ? 'secondary ' : props.buttonVariant1}
+        type="submit"
+        size={!props.buttonSize1 ? '' : props.buttonSize1}
+        disabled={!props.buttonDisabled1 ? false : props.buttonDisabled1}
+        active={!props.buttongActive1 ? false : props.buttongActive1}
+      >
+        {!props.buttonText1 ? 'text change 1  here' : props.buttonText1}
+      </Button>
+      <Button
+        className="text-right"
+        onClick={
+          !props.onClickbutton2
+            ? () => {
+                alert('use the onClick prop to add your own function here');
+              }
+            : props.onClickbutton2
+        }
+        variant={!props.buttonVariant2 ? 'secondary ' : props.buttonVariant2}
+        type="submit"
+        size={!props.buttonSize2 ? '' : props.buttonSize2}
+        disabled={!props.buttonDisabled2 ? false : props.buttonDisabled2}
+        active={!props.buttongActive2 ? false : props.buttongActive2}
+      >
+        {!props.buttonText2 ? 'text change 2  here' : props.text2}
+      </Button>
+      <Button
+        className="text-right"
+        onClick={
+          !props.onClickbutton3
+            ? () => {
+                alert('use the onClick prop to add your own function here');
+              }
+            : props.onClickbutton3
+        }
+        variant={!props.buttonVariant3 ? 'secondary ' : props.buttonVariant3}
+        type="submit"
+        size={!props.buttonSize3 ? '' : props.buttonSize3}
+        disabled={!props.buttonDisabled3 ? false : props.buttonDisabled3}
+        active={!props.buttongActive3 ? false : props.buttongActive3}
+      >
+        {!props.buttonText3 ? 'text change here 3' : props.buttonText3}
+      </Button>
+    </ButtonGroup>
   );
 };
