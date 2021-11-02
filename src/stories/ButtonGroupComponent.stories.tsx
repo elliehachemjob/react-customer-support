@@ -6,10 +6,10 @@ export default {
   component: ButtonGroupComponent,
 };
 
-const ButtonComponentTemplate = (args: any) => (
+const ButtonGroupComponentTemplate = (args: any) => (
   <ButtonGroupComponent {...args} />
 );
 
-export const Default = ButtonComponentTemplate.bind({});
+export const Default = ButtonGroupComponentTemplate.bind({});
 
 // Default.args = {};

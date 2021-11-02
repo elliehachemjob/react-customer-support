@@ -220,7 +220,7 @@ export const NotificationButtonComponent: React.FC<NotificationButtonComponentPr
   );
 };
 
-interface ButtonGroupComponent {
+interface ButtonGroupComponentProps {
   onClickbutton1?: () => void;
   onClickbutton2?: () => void;
   onClicbutton3?: () => void;
@@ -283,7 +283,9 @@ interface ButtonGroupComponent {
   buttongActive3?: boolean;
 }
 
-export const ButtonGroupComponent: React.FC<Props> = (props: any): any => {
+export const ButtonGroupComponent: React.FC<ButtonGroupComponentProps> = (
+  props: any
+): any => {
   return (
     <ButtonGroup>
       <Button
