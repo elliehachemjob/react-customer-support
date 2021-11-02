@@ -2,7 +2,7 @@ import React from 'react';
 import { AccordionComponent } from '../components/CommonComponents';
 
 export default {
-  title: 'CommonComponents/AccordionComponent',
+  title: 'BootStrap/AccordionComponent',
   component: AccordionComponent,
 };
 

@@ -2,7 +2,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Button, Alert, Accordion, Badge, ButtonGroup } from 'react-bootstrap';
+import {
+  Button,
+  Alert,
+  Accordion,
+  Badge,
+  ButtonGroup,
+  Card,
+} from 'react-bootstrap';
 
 interface ButtonComponentProps {
   onClick?: () => void;
@@ -340,5 +347,69 @@ export const ButtonGroupComponent: React.FC<ButtonGroupComponentProps> = (
         {!props.buttonText3 ? 'text change here 3' : props.buttonText3}
       </Button>
     </ButtonGroup>
+  );
+};
+
+interface CardComponentProps {
+  onClick?: () => void;
+  text?: string;
+  cardTitle: string;
+  cardDescription: string;
+  cardStyle: {};
+  cardImage: string;
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+  size?: 'lg' | 'sm';
+  disabled?: boolean;
+  active?: boolean;
+}
+
+export const CardComponent: React.FC<Props> = (props: any): any => {
+  return (
+    <Card style={!props.cardStyle ? { width: '18rem' } : props.cardStyle}>
+      <Card.Img
+        variant="top"
+        src={
+          !props.cardImage
+            ? 'https://media-exp1.licdn.com/dms/image/C560BAQHgMOc88iPV6g/company-logo_200_200/0/1578911344580?e=2159024400&v=beta&t=WfQV2bAVy28VrvjaVFELLmOHYSgYjXtMte1e0cEGpJc'
+            : props.cardImage
+        }
+      />
+      <Card.Body>
+        <Card.Title>
+          {!props.cardTitle ? 'Card Title Change Here ' : props.cardTitle}
+        </Card.Title>
+        <Card.Text>
+          {!props.cardDescription
+            ? 'Card Description Change Here '
+            : props.cardDescription}
+        </Card.Text>
+        <Button
+          onClick={
+            !props.onClick
+              ? () => {
+                  alert('use the onClick prop to add your own function here');
+                }
+              : props.onClick
+          }
+          variant={!props.variant ? 'secondary ' : props.variant}
+        >
+          {!props.text ? 'Text Here ' : props.text}
+        </Button>
+      </Card.Body>
+    </Card>
   );
 };

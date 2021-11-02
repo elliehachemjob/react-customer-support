@@ -2,7 +2,7 @@ import React from 'react';
 import { AlertComponent } from '../components/CommonComponents';
 
 export default {
-  title: 'CommonComponents/AlertComponent',
+  title: 'BootStrap/AlertComponent',
   component: AlertComponent,
 };
 

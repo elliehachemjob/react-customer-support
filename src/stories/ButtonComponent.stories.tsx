@@ -2,7 +2,7 @@ import React from 'react';
 import { ButtonComponent } from '../components/CommonComponents';
 
 export default {
-  title: 'CommonComponents/ButtonComponent',
+  title: 'BootStrap/ButtonComponent',
   component: ButtonComponent,
 };
 
