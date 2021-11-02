@@ -3,6 +3,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import Accordion from 'react-bootstrap/Accordion';
+import Badge from 'react-bootstrap/Badge';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -121,8 +122,8 @@ export const AlertComponent: React.FC<AlertComponentProps> = (
 interface AccordionComponentProps {
   accordionItemId: string;
   onClickHeader?: () => void;
-  accordionTitleText: string;
-  accordionBodyText: string;
+  accordionTitleText?: string;
+  accordionBodyText?: string;
   onClickBody?: () => void;
 }
 
@@ -162,5 +163,62 @@ export const AccordionComponent: React.FC<AccordionComponentProps> = (
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+  );
+};
+
+interface NotificationButtonComponentProps {
+  onClick?: () => void;
+  buttonText?: string;
+  buttonVariant?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+  badgeVariant?:
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'light'
+    | 'link'
+    | 'outline-primary'
+    | 'outline-secondary'
+    | 'outline-success'
+    | 'outline-danger'
+    | 'outline-warning'
+    | 'outline-light'
+    | 'outline-link';
+  size?: 'lg' | 'sm';
+  disabled?: boolean;
+  active?: boolean;
+  badgeCircular: boolean;
+  badgeTextValue: string;
+}
+
+export const NotificationButtonComponent: React.FC<NotificationButtonComponentProps> = (
+  props: any
+): any => {
+  return (
+    <Button variant={!props.buttonVariant ? 'primary' : props.buttonVariant}>
+      {!props.buttonText ? 'Button Text' : props.buttonText}
+
+      <Badge
+        pill={!props.badgeCircular ? false : props.badgeCircular}
+        bg={!props.badgeVariant ? 'danger' : props.variant}
+      >
+        {!props.badgeTextValue ? 'value here' : props.badgeTextValue}
+      </Badge>
+    </Button>
   );
 };
