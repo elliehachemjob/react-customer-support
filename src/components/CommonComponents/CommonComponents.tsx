@@ -12,6 +12,7 @@ import {
   Carousel,
   CloseButton,
   Dropdown,
+  Figure,
 } from 'react-bootstrap';
 
 interface ButtonComponentProps {
@@ -631,5 +632,38 @@ export const DropDownComponent: React.FC<DropDownComponentProps> = (
         </Dropdown.Menu>
       </Dropdown>
     </div>
+  );
+};
+
+interface ProfileComponentProps {
+  onClick?: () => void;
+  profileDescription: string;
+  profileWidth: number;
+  profileHeight: number;
+  profileAlt: string;
+  profileSrc: string;
+}
+
+export const ProfileComponent: React.FC<ProfileComponentProps> = (
+  props: any
+): any => {
+  return (
+    <Figure>
+      <Figure.Image
+        width={!props.profileWidth ? 171 : props.profileWidth}
+        height={!props.profileHeight ? 180 : props.profileHeight}
+        alt={!props.profileAlt ? "Profile's Alt" : props.profileAlt}
+        src={
+          !props.profileSrc
+            ? 'https://media-exp1.licdn.com/dms/image/C560BAQHgMOc88iPV6g/company-logo_200_200/0/1578911344580?e=2159024400&v=beta&t=WfQV2bAVy28VrvjaVFELLmOHYSgYjXtMte1e0cEGpJc'
+            : props.profileSrc
+        }
+      />
+      <Figure.Caption>
+        {!props.profileDescription
+          ? 'Profile Description Change'
+          : props.profileDescription}
+      </Figure.Caption>
+    </Figure>
   );
 };
