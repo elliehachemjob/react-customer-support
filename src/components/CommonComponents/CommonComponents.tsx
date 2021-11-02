@@ -10,6 +10,7 @@ import {
   ButtonGroup,
   Card,
   Carousel,
+  CloseButton,
 } from 'react-bootstrap';
 
 interface ButtonComponentProps {
@@ -518,5 +519,31 @@ export const CarouselComponent: React.FC<CarouselComponentProps> = (
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+  );
+};
+
+interface CloseButtonProps {
+  onClick?: () => void;
+  text?: string;
+  variant?: 'white';
+  disabled?: boolean;
+  className: string;
+}
+
+export const CloseButtonComponent: React.FC<Props> = (props: any): any => {
+  return (
+    <div className={!props.className ? 'bg-dark p-3' : props.className}>
+      <CloseButton
+        variant={!props.variant ? 'white' : props.variant}
+        disabled={!props.variant ? false : props.variant}
+        onClick={
+          !props.onClick
+            ? () => {
+                alert('put your function here');
+              }
+            : props.onClick
+        }
+      />
+    </div>
   );
 };
