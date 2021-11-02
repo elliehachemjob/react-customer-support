@@ -15,5 +15,3 @@ export * from './components/ExpansionAdminPanel';
 export * from './components/SidebarExpansion';
 
 export * from './components/SidebarAdminPanel';
-
-export * from './components/CommonComponents';
